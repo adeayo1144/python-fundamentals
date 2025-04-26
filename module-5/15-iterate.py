@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+fruits = ("mangoes", "orange", "guava" , "cherry", "watermelon")
+for fruit in fruits:
+    print(fruit)
