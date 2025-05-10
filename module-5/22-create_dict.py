@@ -5,4 +5,3 @@ wonders = {
     "cars": ["bugatti" , "ferrari" , "venza" , "Corolla" , "toyota"]
 }
 print(wonders)
-print
