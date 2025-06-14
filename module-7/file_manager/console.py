@@ -15,6 +15,12 @@ class Filemanager(cmd.Cmd):
         """exit the file manager CLI"""
         print ("exiting filemanger. goodbye")
 
+    def precmd(self, line):
+        """pre-command processing"""
+        if line.startwith("create"):
+            print("creating a new file...")
+        return line.strip()
+
     def do_quit (self,line):
         """Quit the file manager"""
         return true
