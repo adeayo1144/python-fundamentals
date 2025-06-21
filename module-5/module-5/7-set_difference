@@ -1,0 +1,18 @@
+def set_difference(set1, set2):
+    """
+    Returns the difference between two sets (i.e., elements that are in set1 but not in set2).
+    Args:
+        set1 (set): The first set.
+        set2 (set): The second set.
+
+    Returns:
+        set: The difference between set1 and set2.
+    """
+    # Calculate the difference between set1 and set2
+    difference = set1 - set2
+    
+    return difference
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5}
+result = set_difference(set1, set2)
+print(result)  
