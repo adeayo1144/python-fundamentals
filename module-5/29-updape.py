@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""a module that updates a value of a dictionary"""
 laptop = {
     "brand" : "Hp",
     "model" : "rog",
@@ -11,4 +12,6 @@ laptop = {
     "cpu" : "Geforce",
     "battery" : "4 - cell ",
 }
-print (laptop.values())
+laptop.update({"price" : 1500000.00})
+laptop . update({"size" : "15.5 inchs"})
+print(laptop)
