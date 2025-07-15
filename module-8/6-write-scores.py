@@ -9,7 +9,7 @@ def collect_student_scores():
 
         try:
             score_input = input(f"Enter score for {name} (0–100): ").strip()
-            score = float(score_input)
+            score = int(score_input)
 
             if score < 0 or score > 100:
                 print("Score must be between 0 and 100.")
@@ -30,4 +30,9 @@ def write_scores_to_file(scores, filename="scores.txt"):
         print(f"Scores saved to {filename}.")
     except IOError:
         print("An error occurred while writing to the file.")
+
+
+if __name__ == "__main__":
+    scores = collect_student_scores()
+    write_scores_to_file(scores)
 

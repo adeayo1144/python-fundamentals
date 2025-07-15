@@ -16,7 +16,7 @@ def read_student_data(filename="data.txt"):
                 student = {
                     "name": name.strip(),
                     "age": int(age.strip()),
-                    "score": float(score.strip())
+                    "score": int(score.strip())
                 }
                 students.append(student)
             except ValueError:
@@ -36,3 +36,13 @@ def print_students_table(students):
     print("\nValid Student Records:")
     print("{:<10} {:<5} {:<6}".format("Name", "Age", "Score"))
     print("-" * 25)
+    for student in students:
+        print("{:<10} {:<5} {:<6}".format(student['name'], student['age'], student['score']))
+
+
+
+
+if __name__ == "__main__":
+    students = read_student_data()
+    print_students_table(students)
+    
