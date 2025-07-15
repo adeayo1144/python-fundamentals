@@ -6,9 +6,10 @@ class Person:
         self.name = name
         self.age = age
 
-
     def greet(self):
         print("Good morning {}". format(self.name))
 
 if __name__ == '__main__':
-    person = Person{}
+    person = Person("john" , 30)
+    person.name = "john"
+    person.greet()
