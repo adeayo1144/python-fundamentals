@@ -8,7 +8,7 @@ div= __import__("cal").div
 operator  = {
     "+" : add,
     "-" : sub,
-    "*" : mul,
+    "x" : mul,
     "/" : div,
 }
 
