@@ -21,6 +21,18 @@ class linkedList:
             current = current.next
         current.next = new_node
 
+    def print_last(self):
+        if not self.head:
+            return None
+        while self.head.next:
+            self.head = self.head.next
+        return self.head.data
+
+    def print_first(self):
+        if not self.head:
+            return None
+        return self.head.data
+
     def print_list(self):
         current = self.head
         while current:
